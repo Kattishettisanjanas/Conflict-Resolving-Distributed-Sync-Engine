@@ -1,0 +1,23 @@
+Push Changes
+
+POST /sync/push
+
+Example:
+{
+"site_id": "nodeA",
+"changes": [
+{
+"id": "1",
+"value": "hello",
+"updated_at": "2026-04-24T10:00:00Z",
+"vector_clock": {"nodeA": 1}
+}
+]
+}
+Pull Changes
+
+POST /sync/pull
+
+{
+"since": "2026-04-24T09:00:00Z"
+}
